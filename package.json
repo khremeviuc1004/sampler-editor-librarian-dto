@@ -1,0 +1,33 @@
+{
+  "name": "@sampler-editor-librarian/dto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "commonjs",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "config": "tsc --showConfig",
+    "clean": "tsc --clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Hremeviuc",
+  "license": "GPL3",
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "class-validator": "^0.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khremeviuc1004/sampler-editor-librarian-dto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khremeviuc1004/sampler-editor-librarian-dto/issues"
+  },
+  "homepage": "https://github.com/khremeviuc1004/sampler-editor-librarian-dto"
+}
