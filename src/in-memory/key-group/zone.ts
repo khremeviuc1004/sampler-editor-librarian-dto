@@ -1,6 +1,20 @@
 import { IsInt, Length, Max, Min } from "class-validator";
-import { IndividualOutputType } from "../program/individual-output";
 
+
+export enum ZoneOutputType {
+	OFF = 2,
+	OUTPUT1 = 3,
+	OUTPUT2 = 4,
+	OUTPUT3 = 5,
+	OUTPUT4 = 6,
+	OUTPUT5 = 7,
+	OUTPUT6 = 8,
+	OUTPUT7 = 9,
+	OUTPUT8 = 10,
+	FX = 255,
+	REVERB = 0,
+	REVERB_AND_FX = 1,
+}
 
 
 export enum ZonePlayback {
@@ -57,7 +71,7 @@ export class Zone {
 	pan: number = 0
 
     
-	output: IndividualOutputType = IndividualOutputType.OFF
+	output: ZoneOutputType = ZoneOutputType.OFF
 
     
 	playback: ZonePlayback = ZonePlayback.AS_SAMPLE
