@@ -29,3 +29,5 @@ export * from './in-memory/key-group/zone'
 
 export * from './in-memory/sample/sample'
 export * from './in-memory/sample/sample-loop'
+
+export * from './persistence/disk-access'
