@@ -7,7 +7,7 @@ export enum DiskAccessReadWrite {
     ALL_SAMPLES,
     CURSOR_PROGRAMS_AND_SAMPLES,
     CURSOR_ITEM_ONLY,
-    OPERATING_SYSTEM
+    OPERATING_SYSTEM,
 }
 
 export enum DeleteFromDisk {
@@ -15,5 +15,5 @@ export enum DeleteFromDisk {
     ALL_PROGRAMS_ONLY,
     ALL_SAMPLES,
     ENTIRE_VOLUME,
-    OPERATING_SYSTEM
+    OPERATING_SYSTEM,
 }
