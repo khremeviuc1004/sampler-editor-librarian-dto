@@ -31,3 +31,6 @@ export * from './in-memory/sample/sample'
 export * from './in-memory/sample/sample-loop'
 
 export * from './persistence/disk-access'
+
+export * from './in-memory/effect/effect'
+export * from './in-memory/reverb/reverb'
