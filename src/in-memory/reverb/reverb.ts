@@ -1,16 +1,13 @@
-import { Length, Max, Min } from "class-validator";
-
+import { Length, Max, Min } from 'class-validator';
 
 export enum ReverbType {
-  LARGE_HALL, 
-  MEDIUM_HALL, 
-  LARGE_ROOM, 
-  SMALL_ROOM, 
-  PLATE_1, 
-  PLATE_2
+  LARGE_HALL,
+  MEDIUM_HALL,
+  LARGE_ROOM,
+  SMALL_ROOM,
+  PLATE_1,
+  PLATE_2,
 }
-
-
 
 export class Reverb {
   // Parameter: REVNAME
@@ -19,7 +16,7 @@ export class Reverb {
   // Range: String of characters
   // Description: Name of effect
   @Length(2, 12)
-  name = 'Unnamed'
+  name = 'Unnamed';
 
   // Parameter: REVSRC
   // Offset: 12 bytes
@@ -32,7 +29,7 @@ export class Reverb {
   // Field size: 1 byte
   // Range: 0=LARGE HALL, 1=MEDIUM HALL,2=LARGE ROOM, 3=SMALL ROOM, 4=PLATE 1, 5=PLATE 2
   // Description: Reverb Type.
-  type = ReverbType.LARGE_HALL
+  type = ReverbType.LARGE_HALL;
 
   // Parameter: REVMIX
   // Offset: 14 bytes
@@ -47,8 +44,7 @@ export class Reverb {
   // Description: Reverb Output Level.
   @Max(99)
   @Min(0)
-  outputLevel = 0
-
+  outputLevel = 0;
 
   // Parameter: REVBAL
   // Offset: 16 bytes
@@ -57,7 +53,7 @@ export class Reverb {
   // Description: Reverb Output Balance.
   @Max(50)
   @Min(-50)
-  outputBalance = 0
+  outputBalance = 0;
 
   // Parameter: REVSPR
   // Offset: 17 bytes
@@ -66,7 +62,7 @@ export class Reverb {
   // Description: Reverb Stereo Width.
   @Max(50)
   @Min(-50)
-  stereoWidth = 0
+  stereoWidth = 0;
 
   // Parameter: Reserved
   // Offset: 18 bytes
@@ -81,7 +77,7 @@ export class Reverb {
   // Description: Reverb Pre-Delay
   @Max(360)
   @Min(0)
-  preDelay = 0
+  preDelay = 0;
 
   // Parameter: Reserved
   // Offset: 23 bytes
@@ -96,7 +92,7 @@ export class Reverb {
   // Description: Reverb HF Cut
   @Max(99)
   @Min(0)
-  highFrequencyCut = 0
+  highFrequencyCut = 0;
 
   // Parameter: Reserved
   // Offset: 25 bytes
@@ -111,7 +107,7 @@ export class Reverb {
   // Description: Reverb HF Damping
   @Max(99)
   @Min(0)
-  highFrequencyDamping = 0
+  highFrequencyDamping = 0;
 
   // Parameter: REVFB
   // Offset: 33 bytes
@@ -120,7 +116,7 @@ export class Reverb {
   // Description: Reverb Decay Time
   @Max(99)
   @Min(0)
-  decayTime = 0
+  decayTime = 0;
 
   // Parameter: Reserved
   // Offset: 34 bytes
@@ -135,5 +131,5 @@ export class Reverb {
   // Description: Reverb Diffusion
   @Max(99)
   @Min(0)
-  diffusion = 0
+  diffusion = 0;
 }
