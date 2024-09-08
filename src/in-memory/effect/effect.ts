@@ -214,6 +214,10 @@ export class EchoEffect extends Effect {
     @Min(0)
     feedbackDamping = 0
 
+    constructor() {
+        super();
+        this.type = EffectType.ECHO;
+    }
 }
 
 export class PitchShiftEffect extends Effect {
@@ -272,6 +276,10 @@ export class PitchShiftEffect extends Effect {
     @Min(0)
     rightDelayTime = 0
 
+    constructor() {
+        super();
+        this.type = EffectType.PITCH_SHIFT;
+    }
 }
 
 export class ChorusEffect extends Effect {
@@ -301,6 +309,11 @@ export class ChorusEffect extends Effect {
     @Max(99)
     @Min(0)
     feedbackLevel = 0
+
+    constructor() {
+        super();
+        this.type = EffectType.CHORUS;
+    }
 }
 
 export class DelayEffect extends Effect {
@@ -339,4 +352,9 @@ export class DelayEffect extends Effect {
     @Max(99)
     @Min(0)
     lfoRate = 0
+
+    constructor() {
+        super();
+        this.type = EffectType.DELAY;
+    }
 }
