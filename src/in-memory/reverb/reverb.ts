@@ -132,4 +132,8 @@ export class Reverb {
   @Max(99)
   @Min(0)
   diffusion = 0;
+
+  constructor(name = 'Unname') {
+    this.name = name;
+  }
 }
